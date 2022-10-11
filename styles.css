@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;700&display=swap');
+
+:root {
+  font-size: 10px;
+  --bg-dark: #1c1b1a;
+  --bg-light: #e4ebe5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--bg-dark);  
+  background-color: var(--bg-light);
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  border-bottom: 2px solid var(--bg-dark);
+}
+
+#navbar {
+  width: 100%;
+  text-align: center;
+}
+
+#navbar li {
+  font-size: 1.8rem;
+  height: 40px;
+  padding: 10px;
+  border-bottom: 1px solid var(--bg-dark);
+}
+
+#navbar li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+
+#main-doc {
+  margin: 50px 0;
+  padding: 0 10px;
+}
+
+#main-doc h2 {
+  margin: 0 0 20px 0;
+}
+
+#main-doc p {
+  margin: 10px 0;
+}
+
+#main-doc li {
+  margin: 10px 0;
+  margin-left: 20px;
+}
+
+#main-doc code {
+  display: block;
+  margin-left: 20px;
+  background-color: var(--bg-dark);
+  padding: 5px 5px 5px 15px;
+}
+
+#main-doc li .code, #main-doc li .cmd {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+#main-doc .code {
+  display: block;
+  margin-left: 20px;
+  background-color: var(--bg-dark);
+  color: aliceblue;
+}
+
+#main-doc .cmd {
+  display: block;
+  margin-left: 20px;
+  background-color: var(--bg-dark);
+  color: #02c733;
+}
+
+.main-section {
+  font-size: 1.6rem;
+  /* border: 1px solid var(--bg-dark); */
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px var(--bg-dark);
+  padding: 20px 20px;
+  margin: 20px 0;
+}
+
+
+
+  
+@media (min-width: 960px) {
+  
+
+  #navbar {
+    padding-top: 10px;    
+    position: fixed;
+    /* float: left; */
+    width: 25%;
+    border-right: 2px solid var(--bg-dark);
+    height: 100vh;
+    overflow: auto;
+  } 
+
+  body {
+    display: flex;
+    gap: 10px;
+    position: relative;
+  }
+
+  #main-doc {
+    width: 75%;
+    margin: initial;
+    margin-left: 25%;
+    padding: 0 10px;
+    /* float: right; */
+  }
+
+  #navbar h1 {
+    padding: 20px 0;
+  }
+
+  #navbar li {
+    padding: 10px 0;
+    height: 40px;
+  }
+
+}
